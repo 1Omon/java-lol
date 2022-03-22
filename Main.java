@@ -4,24 +4,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int secret_number = (int)(Math.random() * 101) ;
-        Scanner input = new Scanner(System.in);
+//        for (int i=0;i<10;i++){
+//            System.out.println("Who am I?");
+//        }
+//        int i = 0;
+//        while (i<10){
+//            System.out.println("yello!");
+//        }
+        Scanner userInput = new Scanner(System.in);
+        int user = userInput.nextInt();
+        float ama = userInput.nextFloat();
 
-        System.out.println("What's your guess? - ");
-
-        int guess = input.nextInt();
-
-        if (guess == secret_number){
-            System.out.println("Correct guess!!!");
-        }else{
-            while (guess != secret_number){
-                System.out.println("wrong guess!");
-                Scanner input2 = new Scanner(System.in);
-
-                System.out.println("What's your guess? - ");
-
-                int next_guess = input.nextInt();
-            }
-        }
+        // CLASS-NAME OBJECT-NAME = new CLASSNAME();
+        // datatype variable = objectName.nextDatatype();
     }
 }
